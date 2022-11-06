@@ -1,4 +1,5 @@
 import { ErrorMessage } from 'formik';
+import PropTypes from 'prop-types';
 
 import ErrorText from './ErrorText.styled'
 
@@ -10,5 +11,7 @@ const FormError = ({ name }) => {
     />
   );
 }
+
+FormError.propTypes = {name: PropTypes.string.isRequired}
 
 export default FormError;
